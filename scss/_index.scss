@@ -1,0 +1,98 @@
+.header{
+    border-bottom: 5px solid #FFDF65;
+    .logo{
+        display: block;
+        max-width: 111px;
+        margin-right: 2rem;
+    }
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #636057;
+  background-color: #fff;
+  border-color: transparent transparent #FFDF65 transparent;
+  border-bottom-width: 0.25rem;
+  font-weight: bold;
+}
+
+.product_photo,.intro_photo{
+    border-radius: 5%;
+}
+
+.fas,.fab{
+    color: #858377;
+    margin-top: 7px;
+    .fa-heart{
+        width: 20px;
+        height: 20px;
+    }
+    .fa-heart,.fa-share-alt{
+        width: 18px;
+        height: 20px;
+    }
+}
+
+.special-follow-btn:hover{
+    border-color: #FFDF65;
+    background-color: #FFDF65;
+}
+
+.special-follow-btn:hover > i{
+    color: #FF785E;
+}
+
+.brown-btn:hover{
+    color: #fff !important;
+}
+
+.brown-btn:hover > i {
+    color: #fff !important;
+}
+
+.profile{
+    h6,p{
+        color: #373A3C;
+    }
+}
+
+.intro_title{
+    border-left: 4px solid #FFDF65;
+}
+
+.selfie{
+    border-radius: 50%;
+    border: 2px solid #FFDF65;
+}
+
+.sponsor-title{
+    border-radius: 5%;
+    border-left: 4px solid #FFDF65;
+    border-right: 4px solid #FFDF65;
+}
+
+.sponsor{
+    .tag-light{
+        background-color: #E8E8DB;
+        color: #858377;
+        padding: 2px 16px;
+        line-height: 18px;
+    }
+    .tag-dark{
+        background-color: #858377;
+        color: #fff;
+        padding: 2px 16px;
+        line-height: 18px;
+    }
+}
+
+.btn-primary:hover{
+    background-color: #FF785E;
+    color: #fff !important;
+}
+
+.target{
+    .progress{
+        border-radius: 8px;
+    }
+}

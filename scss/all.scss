@@ -1,0 +1,68 @@
+@import "bootstrap/bootstrap";
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+// .noto{
+//     font-family: 'Noto Sans TC', sans-serif;
+// }
+
+.text-justify{
+    text-align: justify;
+}
+
+.baloo{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.regular{
+    font-weight: 400;
+}
+.medium{
+    font-weight: 500;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
+}
+
+.font-12{
+    font-size: 12px;
+}
+
+.font-14{
+    font-size: 14px;
+}
+
+.font-18{
+    font-size: 18px;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.font-24{
+    font-size: 24px;
+}
+
+.font-32{
+    font-size: 32px;
+}
+
+@import "index";
+@import "faq";
+@import "comment";
+
+footer{
+    background-color: #494846;
+    color: #fff;
+}
