@@ -7,12 +7,23 @@
     }
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
+.btn-primary:hover{
+    background-color: #FF785E;
+    color: #fff !important;
+}
+
+.target{
+    .progress{
+        border-radius: 8px;
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
   color: #636057;
   background-color: #fff;
-  border-color: transparent transparent #FFDF65 transparent;
-  border-bottom-width: 0.25rem;
+  border-radius: 0;
+  border-bottom: 2px solid #FFDF65;
   font-weight: bold;
 }
 
@@ -54,24 +65,28 @@
     h6,p{
         color: #373A3C;
     }
+    .selfie{
+        border-radius: 50%;
+        border: 2px solid #FFDF65;
+    }
+    a:hover{
+        background-color: #FF785E !important;
+    }
+    .fab:hover{
+        color: #fff;
+    }
 }
 
 .intro_title{
     border-left: 4px solid #FFDF65;
 }
 
-.selfie{
-    border-radius: 50%;
-    border: 2px solid #FFDF65;
-}
-
-.sponsor-title{
-    border-radius: 5%;
-    border-left: 4px solid #FFDF65;
-    border-right: 4px solid #FFDF65;
-}
-
 .sponsor{
+    .sponsor-title{
+        border-radius: 5%;
+        border-left: 4px solid #FFDF65;
+        border-right: 4px solid #FFDF65;
+    }
     .tag-light{
         background-color: #E8E8DB;
         color: #858377;
@@ -83,16 +98,5 @@
         color: #fff;
         padding: 2px 16px;
         line-height: 18px;
-    }
-}
-
-.btn-primary:hover{
-    background-color: #FF785E;
-    color: #fff !important;
-}
-
-.target{
-    .progress{
-        border-radius: 8px;
     }
 }

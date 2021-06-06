@@ -11,7 +11,7 @@ function heightToTop(ele) {
 }
 function goToTab() {
   window.scrollTo({
-    top: heightToTop(document.getElementsByClassName("tab-content")[0]) - 70,
+    top: heightToTop(document.getElementsByClassName("tab-content")[0]) - 100,
     behavior: "smooth",
   });
 }
@@ -44,7 +44,7 @@ window.onscroll = function () {
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+});
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {

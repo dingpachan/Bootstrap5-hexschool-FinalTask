@@ -13,14 +13,14 @@
 <body>
     <!-- header 區塊 -->
     <div class="container-fluid header">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container d-flex align-items-center p-3">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <div class="container d-flex align-items-center">
                     <a href="#" class="logo"><img src="images/logo.jpg" alt="Logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav my-2">
+                        <ul class="navbar-nav my-3">
                             <li class="nav-item">
                                 <a href="#" class="nav-item text-decoration-none mx-3">關於</a>
                             </li>
@@ -97,9 +97,9 @@
 
     <!-- 導覽列: 專案介紹、常見問答、目前進度、留言 -->
     <div class="container-fluid position-sticky top-0 bg-white border-1 border-top border-bottom mb-5" style="z-index: 999;">
-        <nav class="">
+        <nav>
             <div class="container">
-                <div class="nav nav-tabs bg-white regular text-darkBrown-2" id="artical-nav" role="tablist">
+                <div class="nav nav-pills d-flex justify-content-between justify-content-md-start bg-white regular text-darkBrown-2" id="artical-nav" role="tablist">
                     <button onclick="goToTab()" class="nav-link bg-white py-3 active" id="nav-intro-tab" data-bs-toggle="tab" data-bs-target="#nav-intro" type="button" role="tab" aria-controls="nav-intro" aria-selected="true">專案介紹</button>
                     <button onclick="goToTab()" class="nav-link bg-white py-3" id="nav-faq-tab" data-bs-toggle="tab" data-bs-target="#nav-faq" type="button" role="tab" aria-controls="nav-faq" aria-selected="false">常見問答</button>
                     <button onclick="goToTab()" class="nav-link bg-white py-3" id="nav-progress-tab" data-bs-toggle="tab" data-bs-target="#nav-progress" type="button" role="tab" aria-controls="nav-progress" aria-selected="false">目前進度</button>
@@ -111,7 +111,7 @@
     <div class="container">
         <div class="row g-5">
             <div class="col-12 col-lg-8">
-                <div class="tab-content mb-4 order-2 " id="artical-nav-tabContent">
+                <div class="tab-content mb-3 order-2 " id="artical-nav-tabContent">
                     <!-- 專案介紹 -->
                     <div class="tab-pane fade show active" id="nav-intro" role="tabpanel" aria-labelledby="nav-intro-tab">
                         <img src="images/p1.jpg" alt="intro-photo" class="intro_photo">
@@ -366,9 +366,9 @@
                             <h3 class="position-absolute top-0 start-50 translate-middle bg-white px-3 fw-bold">贊助專案</h3>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">贊助方案</label>
-                            <select class="form-select bg-light text-muted" aria-label="贊助方案" required>
-                                <option selected disabled>請選擇一個方案</option>
+                            <label for="sponsorCase" class="form-label">贊助方案</label>
+                            <select class="form-select bg-light text-muted" id="sponsorCase" aria-label="贊助方案" required>
+                                <option value selected disabled="disabled">請選擇一個方案</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -378,38 +378,38 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">收件人姓名</label>
-                            <input type="text" class="form-control bg-light" id="exampleFormControlInput1" required>
-                            <div id="validationServer0ㄉFeedback" class="invalid-feedback text-warning">
+                            <label for="receiveName" class="form-label">收件人姓名</label>
+                            <input type="text" class="form-control bg-light" id="receiveName" required>
+                            <div id="validationServer02Feedback" class="invalid-feedback text-warning">
                                 請輸入姓名
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">聯絡電話</label>
-                            <input type="number" class="form-control bg-light" id="exampleFormControlInput1" required>
+                            <label for="phoneNumber" class="form-label">聯絡電話</label>
+                            <input type="number" class="form-control bg-light" id="phoneNumber" required>
                             <div id="validationServer03Feedback" class="invalid-feedback text-warning">
                                 請輸入聯絡電話
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">連絡信箱</label>
-                            <input type="email" class="form-control bg-light" id="exampleFormControlInput1" required>
+                            <label for="userEmail" class="form-label">連絡信箱</label>
+                            <input type="email" class="form-control bg-light" id="userEmail" required>
                             <div id="validationServer04Feedback" class="invalid-feedback text-warning">
                                 請輸入正確的郵件格式
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">付款方式</label>
-                            <select class="form-select bg-light text-muted" aria-label="付款方式" required>
+                            <label for="payWay" class="form-label">付款方式</label>
+                            <select class="form-select bg-light text-muted" id="payWay" aria-label="付款方式" required>
+                                <option value selected disabled="disabled">請選擇付款方式</option>
                                 <option value="1#信用卡付款">信用卡付款</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                                <option value="2#貨到付款">貨到付款</option>
                             </select>
                             <div id="validationServer05Feedback" class="invalid-feedback text-warning">
                                 請選擇付款方式
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center mb-5">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
                             <button type="submit" class="btn btn-primary rounded-pill px-5 py-2 bold text-darkBrown-2">贊助專案</button>
                         </div>
                     </div>
@@ -436,10 +436,10 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
                                 <a class="d-inline-block bg-darkBrown-3 rounded-circle text-center" style="width:30px; height:30px;">
-                                    <i class="fab fa-facebook-f text-white bg-darkBrown-3"></i>
+                                    <i class="fab fa-facebook-f text-white"></i>
                                 </a>
                                 <a class="d-inline-block bg-darkBrown-3 rounded-circle text-center" style="width:30px; height:30px;">
-                                    <i class="fab fa-youtube text-white bg-darkBrown-3"></i>
+                                    <i class="fab fa-youtube text-white"></i>
                                 </a>
                             </div>
                             <button type="button" class="btn btn-outline-darkBrown-3 brown-btn rounded-pill px-3"><i class="far fa-comment-dots me-1"></i><small>聯絡我們</small></button>
@@ -454,7 +454,7 @@
                     <div class="card mb-3">
                         <img src="images/plan_img.jpg" class="card-img-top" alt="sponsor-photo">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-3 py-2 text-darkBrown-2 font-14">
+                            <li class="border-bottom d-flex justify-content-between align-items-center mx-3 py-2 text-darkBrown-2 font-14">
                                 <span class="noto font-14">限時優惠</span>
                                 <span class="baloo">2 days 20:05:20</span>
                             </li>
@@ -473,7 +473,7 @@
                     <div class="card mb-3">
                         <img src="images/plan_img.jpg" class="card-img-top" alt="sponsor-photo">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-3 py-2 text-darkBrown-2 font-14">
+                            <li class="border-bottom d-flex justify-content-between align-items-center mx-3 py-2 text-darkBrown-2 font-14">
                                 <span class="noto font-14">限時優惠</span>
                                 <span class="baloo">2 days 20:05:20</span>
                             </li>
@@ -492,7 +492,7 @@
                     <div class="card mb-3">
                         <img src="images/plan_img.jpg" class="card-img-top" alt="sponsor-photo">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-3 py-2 text-darkBrown-2 font-14">
+                            <li class="border-bottom d-flex justify-content-between align-items-center mx-3 py-2 text-darkBrown-2 font-14">
                                 <span class="noto font-14">限時優惠</span>
                                 <span class="baloo">2 days 20:05:20</span>
                             </li>
